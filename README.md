@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# The Oxford Job Dictionary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app lets users keep track of their job applications  was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
