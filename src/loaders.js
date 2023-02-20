@@ -5,3 +5,9 @@ export const indexLoader = async () => {
     const jobs = await response.json()
     return jobs
 }
+
+export const showLoader = async ({params}) => {
+    const resposne = await fetch(URL + `/jobs/${params.id}/`)
+    const job = await response.json()
+    return job
+}
