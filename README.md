@@ -49,6 +49,9 @@ Outlet -- "/jobs/delete/:id" --> deleteAction
 
 #### Index Page - Desktop and mobile
 
+<img src="https://i.imgur.com/CU3EYze.png">
+<img src="https://i.imgur.com/fasL3U5.png">
+
 ### Daily Plan
 
 | Day | Goal |
