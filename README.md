@@ -43,4 +43,23 @@ Outlet -- "/jobs/delete/:id" --> deleteAction
 
 ### Wireframes & Mockups
 
+#### General Design
+
+<img src="https://i.imgur.com/ApfT5MI.png">
+
+#### Index Page - Desktop and mobile
+
 ### Daily Plan
+
+| Day | Goal |
+| --- | ---- |
+| 2/19 | Finish readme | 
+| 2/20 | Finish CRUD | 
+| 2/21 | Research Burger Menu | 
+| 2/22 | Work on Burger Menu | 
+| 2/23 | Finish Burger Menu | 
+| 2/24 | Filter ability | 
+| 2/25 | Filter ability | 
+| 2/26 | Styling | 
+| 2/27 | Styling |
+| 2/28 | Present! |
