@@ -4,7 +4,7 @@ import { useState } from "react";
 function Create(props) {
     const [isChecked, setIsChecked] = useState(false);
     const handleOnChange = () => {
-        setIsChecked(!isChecked);
+        return setIsChecked(!isChecked);
     }
     return (
         <div>

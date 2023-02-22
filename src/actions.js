@@ -11,7 +11,7 @@ export const createAction = async ({request}) => {
         salary: formData.get("salary"),
         remote: formData.get("remote")
     }
-    await fetch(URL + "/jobs", {
+    await fetch(URL + "/jobs/", {
         method: "post",
         headers: {
             "Content-Type": "application/json",
