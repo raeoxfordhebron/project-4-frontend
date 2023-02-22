@@ -5,6 +5,7 @@ const URL = "https://project-4-backend.onrender.com"
 export const createAction = async ({request}) => {
     const formData = await request.formData()
     const newJob = {
+        jobid: formData.get("jobid"),
         title: formData.get("title"),
         description: formData.get("description"),
         type: formData.get("type"),
