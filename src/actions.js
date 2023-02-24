@@ -38,7 +38,7 @@ export const updateAction = async ({request, params}) => {
         },
         body: JSON.stringify(updatedJob)
     })
-    return redirect(`/jobs/${id}`)
+    return redirect(`/jobs/${id}/`)
 }
 
 export const deleteAction = async ({params}) => {
