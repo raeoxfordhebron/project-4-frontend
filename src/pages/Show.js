@@ -14,7 +14,7 @@ const Show = (props) => {
       <p>{job.description}</p>
       <div style={{textAlign: "center"}}>
       <h2>Update Job</h2>
-      <Form action={`/update/${job.id}/`} method="post">
+      <Form action={`/update/${job.id}/`} method="put">
         <input type="text" name="title" placeholder="Job Title" defaultValue={job.title}/>
         <input type="text" name="type" placeholder="Job Type" defaultValue={job.type}/>
         <input type="text" name="description" placeholder="Job Description" defaultValue={job.description}/>

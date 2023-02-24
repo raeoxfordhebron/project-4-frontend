@@ -25,8 +25,9 @@ const Index = (props) => {
     {displayedJobs.map(job => (
     <div key={job.id} className="job">
       <Link to={`/${job.id}`}>
-        <h1>{job.title}</h1>
+        <div>{job.title}</div> 
       </Link>
+      
       <h3>{job.description}</h3>
     </div>
   ))}
