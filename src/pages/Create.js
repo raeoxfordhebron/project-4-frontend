@@ -14,7 +14,7 @@ function Create(props) {
                 <input type="input" name="description" placeholder="Job Description"/>
                 <input type="input" name="type" placeholder="Job Type"/>
                 <input type="input" name="salary" placeholder="Job Salary"/>
-                <input type="checkbox" id="remote" name="remote" value="Remote" checked={isChecked} onChange={handleOnChange} /> Remote
+                <input type="checkbox" id="remote" name="remote" value={isChecked} checked={isChecked} onChange={handleOnChange} /> Remote
                 <button type="submit">Create New Job</button>
             </Form>
         </div>

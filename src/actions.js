@@ -11,11 +11,8 @@ export const createAction = async ({request}) => {
         salary: formData.get("salary"),
         remote: formData.get("remote")
     }
-    if(newJob.remote === null){
-        return newJob.remote === false;
-    }
     await fetch(URL + "/jobs/", {
-        method: "post",
+        method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
