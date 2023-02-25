@@ -3,6 +3,7 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import KeyBoardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight'
+import styles from './sidenav.module.css'
 
 export default function Sidenav() {
     const [open, setOpen] = useState(true)
