@@ -30,13 +30,32 @@ nav {
 
 .job-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .job {
   border: 1px solid black;
-  margin: 3px auto
+  margin: 10px auto;
+  padding: 5px;
+  height: 30vh;
+  width: 50vh;
+  border-radius: 6px;
 }
 
-.nav-footer{
-  
+.search-feature{
+  display: flex;
+  width: 30vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.search-bar{
+  width: 30vh!important;
+  height: 5vh!important;
+  margin: 10px;
+}
+
+#search {
+  margin: 0 5px;
 }
