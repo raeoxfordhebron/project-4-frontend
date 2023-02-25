@@ -4,7 +4,7 @@ body {
 }
 
 .App {
-    display: flex;
+ display: grid;
 }
 
 main {
