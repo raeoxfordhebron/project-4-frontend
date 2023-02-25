@@ -1,5 +1,6 @@
 import { Form, Link, useLoaderData } from "react-router-dom";
 import { useState } from "react"
+import styles from "./show.module.css"
 
 const Show = (props) => {
   const [isChecked, setIsChecked] = useState(false)
@@ -9,8 +10,8 @@ const Show = (props) => {
   const job = useLoaderData()  
   return (
     <div>
-      <h1>{job.title}</h1>
-      <h2>{job.type}</h2>
+      <h3>{job.title}</h3>
+      <h6>{job.type}</h6>
       <p>{job.description}</p>
       <div style={{textAlign: "center"}}>
       <h2>Update Job</h2>

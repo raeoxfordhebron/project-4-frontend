@@ -29,8 +29,8 @@ const Index = (props) => {
       <Link to={`/${job.id}`}>
         <div>{job.title}</div> 
       </Link>
-      
       <h6>{job.type}</h6>
+      <h6>{job.salary}</h6>
       <div>{job.description}</div>
     </div>
   ))}
