@@ -32,13 +32,13 @@ export const updateAction = async ({request, params}) => {
         remote: formData.get("remote")
     }
     await fetch(URL + `/jobs/${id}/`, {
-        method: "put",
+        method: "post",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(updatedJob)
     })
-    return redirect(`/jobs/${id}/`)
+    return redirect(`/jobs/`)
 }
 
 export const deleteAction = async ({params}) => {

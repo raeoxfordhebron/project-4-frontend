@@ -37,9 +37,11 @@ nav {
   border: 1px solid black;
   margin: 10px auto;
   padding: 5px;
-  height: 30vh;
+  max-height: 30vh;
   width: 50vh;
   border-radius: 6px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .search-feature{
