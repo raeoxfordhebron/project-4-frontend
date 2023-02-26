@@ -1,7 +1,7 @@
 import { Form, Link, useLoaderData } from "react-router-dom";
 import { useState } from "react"
 import styles from "./show.module.css"
-import { style } from "@mui/system";
+
 
 const Show = (props) => {
   const [isChecked, setIsChecked] = useState(false)
