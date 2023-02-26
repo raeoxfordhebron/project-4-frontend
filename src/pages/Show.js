@@ -24,7 +24,7 @@ const Show = (props) => {
       <input type="text" name="description" placeholder="Job Description" defaultValue={job.description}/>
       <input type="text" name="salary" placeholder="Job Salary" defaultValue={job.salary}/>
       <div className={styles.showbuttons}>
-      <input type="checkbox" name="remote" value="Remote" checked={isChecked} onChange={handleOnChange}/> Remote
+      <input type="checkbox" name="remote" value={isChecked} checked={isChecked} onChange={handleOnChange}/> Remote
       <button>Update Job</button>
       </div>
     </Form>
