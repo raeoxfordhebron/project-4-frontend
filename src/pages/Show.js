@@ -12,7 +12,7 @@ const Show = (props) => {
   return (
     <div>
       <h3>{job.title}</h3>
-      <div>{job.link}</div>
+      <a href={job.link}>{job.link}</a>
       <h6>{job.type}</h6>
       <p>{job.description}</p>
       <div style={{textAlign: "center"}}>

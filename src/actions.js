@@ -6,6 +6,7 @@ export const createAction = async ({request}) => {
     const formData = await request.formData()
     const newJob = {
         title: formData.get("title"),
+        link: formData.get("link"),
         description: formData.get("description"),
         type: formData.get("type"),
         salary: formData.get("salary"),
@@ -26,6 +27,7 @@ export const updateAction = async ({request, params}) => {
     const id = params.id
     const updatedJob = {
         title: formData.get("title"),
+        link: formData.get("link"),
         description: formData.get("description"),
         type: formData.get("type"),
         salary: formData.get("salary"),
