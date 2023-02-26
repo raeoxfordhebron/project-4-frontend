@@ -1,7 +1,5 @@
-.job-container{
-    
-}
-
-.job {
-    
+.showbuttons {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 10px;
 }

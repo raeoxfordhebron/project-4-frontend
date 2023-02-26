@@ -20,6 +20,7 @@ const Index = (props) => {
     setDisplayedJobs(searchJobs(search))
   }
   return (<>
+  <div>
   <div className="search-feature">
     <span id="search">Search:</span> <input type="text" ref={inputRef} className="search-bar"/> <input onClick={handleSubmit} type="submit"/>
     </div> 
@@ -34,6 +35,7 @@ const Index = (props) => {
       <div>{job.description}</div>
     </div>
   ))}
+  </div>
   </div>
   </>
   );

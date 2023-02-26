@@ -17,10 +17,14 @@ code {
 }
 
 nav {
-  background-color: #045D5D;
+  background-color: #033b3b;
   color: white;
   text-decoration: none;
   font-size: 3rem;
+  width: 100%;
+  margin: 0 auto;
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 
 .nav-link:visited {
@@ -31,10 +35,13 @@ nav {
 .job-container {
   display: flex;
   flex-wrap: wrap;
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+  justify-self: stretch;
 }
 
 .job {
-  border: 1px solid black;
+  border: 2px solid black;
   margin: 10px auto;
   padding: 5px;
   max-height: 30vh;
@@ -47,9 +54,13 @@ nav {
 .search-feature{
   display: flex;
   width: 30vh;
+  max-height: 10vh;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto 100px;
+  grid-column: 3 / span 2;
+  grid-row-start: 2;
+  justify-self: start;
 }
 
 .search-bar{

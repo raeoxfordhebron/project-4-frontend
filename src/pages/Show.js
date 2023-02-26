@@ -1,5 +1,7 @@
 import { Form, Link, useLoaderData } from "react-router-dom";
 import { useState } from "react"
+import styles from "./show.module.css"
+import { style } from "@mui/system";
 
 const Show = (props) => {
   const [isChecked, setIsChecked] = useState(false)
@@ -19,13 +21,15 @@ const Show = (props) => {
         <input type="text" name="type" placeholder="Job Type" defaultValue={job.type}/>
         <input type="text" name="description" placeholder="Job Description" defaultValue={job.description}/>
         <input type="text" name="salary" placeholder="Job Salary" defaultValue={job.salary}/>
+        <div className={styles.showbuttons} >
         <input type="checkbox" name="remote" value="Remote" checked={isChecked} onChange={handleOnChange}/> Remote
         <button>Update Job</button>
+        </div>
       </Form>
+      </div>
       <Form action={`/delete/${job.id}`} method="post">
         <button>Delete Job</button>
       </Form>
-      </div>
       <Link to="/">
         <button>Go Back</button>
       </Link>
