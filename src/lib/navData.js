@@ -1,6 +1,6 @@
 import HomeIcon from '@mui/icons-material/Home'
 import CreateIcon from '@mui/icons-material/Create'
-import UpdateIcon from '@mui/icons-material/Update'
+import InfoIcon from '@mui/icons-material/Info'
 
 export const navData = [
     {
@@ -17,8 +17,8 @@ export const navData = [
     },
     {
         id: 2,
-        icon: <UpdateIcon/>,
-        text: "Update",
-        link: "/update"
+        icon: <InfoIcon/>,
+        text: "About",
+        link: "/about"
     }
 ]
