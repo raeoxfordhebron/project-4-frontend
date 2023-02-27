@@ -33,6 +33,7 @@ export const updateAction = async ({request, params}) => {
         salary: formData.get("salary"),
         remote: formData.get("remote")
     }
+    console.log(updatedJob)
     await fetch(URL + `/jobs/${id}/`, {
         method: "put",
         headers: {

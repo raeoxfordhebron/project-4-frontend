@@ -3,3 +3,12 @@
     flex-wrap: wrap;
     max-width: 10px;
 }
+
+.jobcontainer {
+    border: 1px solid black;
+    border-radius: 3px;
+    max-width: 200vh;
+    padding: 5px;
+    margin: 100px auto;
+    background-color: rgb(223, 230, 233);
+}

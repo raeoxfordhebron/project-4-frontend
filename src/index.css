@@ -42,7 +42,8 @@ nav {
   border: 2px solid black;
   margin: 10px auto;
   padding: 5px;
-  max-height: 30vh;
+  max-height: 20vh;
+  max-width: 35vh;
   width: 50vh;
   border-radius: 6px;
   overflow-y: auto;

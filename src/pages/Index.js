@@ -22,7 +22,7 @@ const Index = (props) => {
   return (<>
   <div>
   <div className="search-feature">
-    <span id="search">Search:</span> <input type="text" ref={inputRef} className="search-bar"/> <input onClick={handleSubmit} type="submit"/>
+    <span id="search">Search By Title:</span> <input type="text" ref={inputRef} className="search-bar"/> <input onClick={handleSubmit} type="submit"/>
     </div> 
     <div className="job-container">
     {displayedJobs.map(job => (
