@@ -18,7 +18,7 @@ const Show = (props) => {
       <h6>{job.type}</h6>
       <p>{job.description}</p>
       </div>
-      <div style={{textAlign: "center"}}>
+      <div className={styles.updatecontainer}>
     <h2>Update Job</h2>
     <Form action={`/update/${job.id}/`} method="put">
       <input type="text" name="title" placeholder="Job Title" defaultValue={job.title}/>
@@ -32,12 +32,14 @@ const Show = (props) => {
       </div>
     </Form>
     </div>
+    <div className={styles.crudbuttons}>
       <Form action={`/delete/${job.id}`} method="post">
         <button>Delete Job</button>
       </Form>
       <Link to="/">
         <button>Go Back</button>
       </Link>
+      </div>
     </div>
   );
   };
