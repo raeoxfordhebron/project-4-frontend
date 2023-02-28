@@ -5,8 +5,12 @@ import styles from "./show.module.css"
 
 const Show = (props) => {
   const [isChecked, setIsChecked] = useState(false)
+  const [open, setOpen] = useState(false)
   const handleOnChange = () => {
     return setIsChecked(!isChecked)
+  }
+  const handleOnClick = () => {
+    return setOpen(!open)
   }
   const job = useLoaderData()  
   return (
@@ -18,6 +22,7 @@ const Show = (props) => {
       <h6>{job.type}</h6>
       <p>{job.description}</p>
       </div>
+      {/* <button onClick={handleOnClick}>Update Job</button> */}
       <div className={styles.updatecontainer}>
     <h2>Update Job</h2>
     <Form action={`/update/${job.id}/`} method="put">
@@ -28,7 +33,7 @@ const Show = (props) => {
       <input type="text" name="salary" placeholder="Job Salary" defaultValue={job.salary}/>
       <div className={styles.showbuttons}>
       Remote <input type="checkbox" name="remote" value={isChecked} checked={isChecked} onChange={handleOnChange}/>
-      <button>Update Job</button>
+      <button>Submit</button>
       </div>
     </Form>
     </div>

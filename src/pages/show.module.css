@@ -21,6 +21,11 @@
     margin: 0 auto;
 }
 
+
+h2.open {
+    visibility: visible;
+}
+
 .crudbuttons {
     margin: 0 auto;
     text-align: center;

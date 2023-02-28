@@ -1,7 +1,7 @@
 .sidenav {
     width: 95%;
     transition: width 0.3s ease-in-out;
-    height: 100vh;
+    height: 100%;
     background-color: rgb(10,25,41);
     padding-top: 28px;
     grid-row-start: 2;
@@ -45,10 +45,4 @@
     border: none;
     cursor: pointer;
     padding-left: 20px;
-}
-
-@media only screen and (max-width: 556px){
-    .sidenav {
-        height: 100%;
-    }
 }
